@@ -2,8 +2,6 @@ var numeri = [];
 
 var numeriUtente = [];
         
-var esito = [];
-
 var numeroUtente;
 
 for(var i = 0; i < 5; i++){
@@ -40,18 +38,12 @@ function timer(){
 
         for(var i = 0; i <= 5; i++){
            numeroUtente = parseInt(prompt('Inserisci un numero:'));
-           if(!numeriUtente.includes(numeroUtente)){
+           if(numeri.includes(numeroUtente) && !numeriUtente.includes(numeroUtente)){
               numeriUtente.push(numeroUtente);
-            }else{
-             alert('Attenzione!!! Hai già inserito questo numero');
-            }
-
-            if(numeriUtente.includes(numeri[i])){
-                esito.push(numeroUtente);
             }
         }
 
-        alert('Hai indivinato:'+ ' ' + esito.length + 'numeri');
-        alert('I numeri indovinati sono:' + ' ' + esito);
+        alert('Hai indivinato:'+ ' ' + numeriUtente.length + 'numeri');
+        alert('I numeri indovinati sono:' + ' ' + numeriUtente);
     }
 }
