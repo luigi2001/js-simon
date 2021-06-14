@@ -36,7 +36,7 @@ function timer(){
         alert('Tempo scaduto. Adesso prova tu a riscrivere i numeri che hai visto');
         clearInterval(contoRovescia);
 
-        for(var i = 0; i <= 5; i++){
+        for(var i = 0; i < 5; i++){
            numeroUtente = parseInt(prompt('Inserisci un numero:'));
            if(numeri.includes(numeroUtente) && !numeriUtente.includes(numeroUtente)){
               numeriUtente.push(numeroUtente);
